@@ -14,6 +14,7 @@
            <th>Nombre</th>
            <th>Usuario</th>
            <th>Telefono</th>
+           <th>Dirección</th>
            <th>Foto</th>
            <th>Perfil</th>
            <th>Estado</th>
@@ -34,6 +35,7 @@
                   <td>'.$_SESSION["usuario"].'</td>';
 
                   echo '<td>'.$_SESSION["telefono"].'</td>';
+                  echo '<td>'.$_SESSION["direccion"].'</td>';
 
                   if($_SESSION["foto"] != ""){
 

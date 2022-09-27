@@ -146,6 +146,20 @@ MODAL AGREGAR USUARIO
 
             </div>
 
+            <!-- ENTRADA PARA LA DIRECCION -->
+
+            <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-home"></i></span> 
+
+                <input type="text" class="form-control input-lg" name="nuevaDireccion" placeholder="Ingresar direccion" id="nuevaDireccion" required>
+
+              </div>
+
+            </div>
+
             <!-- ENTRADA PARA SUBIR FOTO -->
 
              <div class="form-group">

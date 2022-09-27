@@ -31,6 +31,7 @@ class ControladorUsuarios{
 						$_SESSION["nombre"] = $respuesta["nombre"];
 						$_SESSION["usuario"] = $respuesta["usuario"];
 						$_SESSION["telefono"] = $respuesta["telefono"];
+						$_SESSION["direccion"] = $respuesta["direccion"];
 						$_SESSION["foto"] = $respuesta["foto"];
 						$_SESSION["perfil"] = $respuesta["perfil"];
 						$_SESSION["estado"] = $respuesta["estado"];
@@ -179,6 +180,7 @@ class ControladorUsuarios{
 					           "usuario" => $_POST["nuevoUsuario"],
 					           "password" => $encriptar,
 							   "telefono"=>$_POST["nuevoTelefono"],
+							   "direccion"=>$_POST["nuevaDireccion"],
 					           "perfil" => $_POST["nuevoPerfil"],
 					           "foto"=>$ruta,
 							   "estado"=>$est);
