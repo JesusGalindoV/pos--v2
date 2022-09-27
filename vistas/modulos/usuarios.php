@@ -391,6 +391,34 @@ MODAL EDITAR USUARIO
 
             </div>
 
+            <!-- ENTRADA PARA EL TELEFONO -->
+
+            <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-phone"></i></span> 
+
+                <input type="text" class="form-control input-lg" id="editarTelefono" name="editarTelefono" data-inputmask="'mask':'(999) 999-9999'" data-mask value="">
+
+              </div>
+
+            </div>
+
+            <!-- ENTRADA PARA LA DIRECCION -->
+            
+           <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-home"></i></span> 
+
+                <input type="text" class="form-control input-lg" id="editarDireccion" name="editarDireccion" value="">
+
+              </div>
+
+            </div>
+
             <!-- ENTRADA PARA SELECCIONAR SU PERFIL -->
 
             <div class="form-group">

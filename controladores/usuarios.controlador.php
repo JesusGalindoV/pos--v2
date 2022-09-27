@@ -386,6 +386,9 @@ class ControladorUsuarios{
 
 				}
 
+
+
+
 				if(!isset($_POST["nuevoPerfil"])){
 
 					$_POST["nuevoPerfil"] = "Cliente";
@@ -395,6 +398,8 @@ class ControladorUsuarios{
 				$datos = array("nombre" => $_POST["editarNombre"],
 							   "usuario" => $_POST["editarUsuario"],
 							   "password" => $encriptar,
+							   "telefono" => $_POST["editarTelefono"],
+							   "direccion" => $_POST["editarDireccion"],
 							   "perfil" => $_POST["nuevoPerfil"],
 							   "foto" => $ruta);
 
