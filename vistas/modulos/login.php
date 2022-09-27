@@ -132,31 +132,19 @@ MODAL AGREGAR USUARIO
 
             </div>
 
-            <!-- ENTRADA PARA SELECCIONAR SU PERFIL -->
+            <!-- ENTRADA PARA TELEFONO -->
 
-            <!-- <div class="form-group">
+            <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-users"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-phone"></i></span> 
 
-                <select class="form-control input-lg" name="nuevoPerfil">
-                  
-                  <option value="">Selecionar perfil</option>
-
-                  <option value="Administrador">Administrador</option>
-
-                  <option value="Especial">Especial</option>
-
-                  <option value="Vendedor">Vendedor</option>
-
-                  <option value="Cliente">Cliente</option>
-
-                </select>
+                <input type="text" class="form-control input-lg" name="nuevoTelefono" placeholder="Ingresar telefono" data-inputmask="'mask':'(999) 999-9999'" data-mask required>
 
               </div>
 
-            </div> -->
+            </div>
 
             <!-- ENTRADA PARA SUBIR FOTO -->
 

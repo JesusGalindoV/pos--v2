@@ -59,6 +59,7 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor" || $_S
            <th>Nombre</th>
            <th>Usuario</th>
            <th>Foto</th>
+           <th>Telefono</th>
            <th>Perfil</th>
            <th>Estado</th>
            <th>Último login</th>
@@ -83,6 +84,8 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor" || $_S
                   <td>'.($key+1).'</td>
                   <td>'.$value["nombre"].'</td>
                   <td>'.$value["usuario"].'</td>';
+
+                  echo '<td>'.$value["telefono"].'</td>';
 
                   if($value["foto"] != ""){
 
@@ -206,6 +209,20 @@ MODAL AGREGAR USUARIO
                 <span class="input-group-addon"><i class="fa fa-lock"></i></span> 
 
                 <input type="password" class="form-control input-lg" name="nuevoPassword" placeholder="Ingresar contraseña" required>
+
+              </div>
+
+            </div>
+
+            <!-- ENTRADA PARA TELEFONO -->
+
+            <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-phone"></i></span> 
+
+                <input type="text" class="form-control input-lg" name="nuevoTelefono" placeholder="Ingresar telefono" data-inputmask="'mask':'(999) 999-9999'" data-mask required>
 
               </div>
 
