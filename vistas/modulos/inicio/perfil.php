@@ -108,7 +108,7 @@ MODAL EDITAR USUARIO
         </div>
 
         <!--=====================================
-        CUERPO DEL MODAL
+        CUERPO DE MODAL
         ======================================-->
 
         <div class="modal-body">

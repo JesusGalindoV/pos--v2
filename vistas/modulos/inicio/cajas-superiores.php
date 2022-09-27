@@ -9,7 +9,7 @@ $ventas = ControladorVentas::ctrSumaTotalVentas();
 $categorias = ControladorCategorias::ctrMostrarCategorias($item, $valor);
 $totalCategorias = count($categorias);
 
-$clientes = ControladorUsuarios::ctrMostrarUsuarios($item, $valor);
+$clientes = ControladorUsuarios::ctrMostrarUsuarios($item, $valor); //imprimimos la cantidad de usuarios registrados
 $totalClientes = count($clientes);
 
 $productos = ControladorProductos::ctrMostrarProductos($item, $valor, $orden);
