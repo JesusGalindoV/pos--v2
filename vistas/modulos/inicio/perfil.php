@@ -13,6 +13,8 @@
            <th style="width:10px">#</th>
            <th>Nombre</th>
            <th>Usuario</th>
+           <th>Telefono</th>
+           <th>Dirección</th>
            <th>Foto</th>
            <th>Perfil</th>
            <th>Estado</th>
@@ -31,6 +33,9 @@
                   <td>'.(1).'</td>
                   <td>'.$_SESSION["nombre"].'</td>
                   <td>'.$_SESSION["usuario"].'</td>';
+
+                  echo '<td>'.$_SESSION["telefono"].'</td>';
+                  echo '<td>'.$_SESSION["direccion"].'</td>';
 
                   if($_SESSION["foto"] != ""){
 
@@ -159,7 +164,33 @@ MODAL EDITAR USUARIO
 
             </div>
 
-           
+            <!-- ENTRADA PARA EL TELEFONO -->
+
+            <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-phone"></i></span> 
+
+                <input type="text" class="form-control input-lg" id="editarTelefono" name="editarTelefono" placeholder="Ingresar telefono" data-inputmask="'mask':'(999) 999-9999'" data-mask value="">
+
+              </div>
+
+            </div>
+
+           <!-- ENTRADA PARA LA DIRECCION -->
+            
+           <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-home"></i></span> 
+
+                <input type="text" class="form-control input-lg" id="editarDireccion" placeholder="Ingresar dirección" name="editarDireccion" value="">
+
+              </div>
+
+            </div>
 
             <!-- ENTRADA PARA SUBIR FOTO -->
 

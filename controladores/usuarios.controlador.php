@@ -30,6 +30,8 @@ class ControladorUsuarios{
 						$_SESSION["id"] = $respuesta["id"];
 						$_SESSION["nombre"] = $respuesta["nombre"];
 						$_SESSION["usuario"] = $respuesta["usuario"];
+						$_SESSION["telefono"] = $respuesta["telefono"];
+						$_SESSION["direccion"] = $respuesta["direccion"];
 						$_SESSION["foto"] = $respuesta["foto"];
 						$_SESSION["perfil"] = $respuesta["perfil"];
 						$_SESSION["estado"] = $respuesta["estado"];
@@ -93,7 +95,8 @@ class ControladorUsuarios{
 
 			if(preg_match('/^[a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["nuevoNombre"]) &&
 			   preg_match('/^[a-zA-Z0-9]+$/', $_POST["nuevoUsuario"]) &&
-			   preg_match('/^[a-zA-Z0-9]+$/', $_POST["nuevoPassword"])){
+			   preg_match('/^[a-zA-Z0-9]+$/', $_POST["nuevoPassword"]) &&
+			   preg_match('/^[()\-0-9 ]+$/', $_POST["nuevoTelefono"])){
 
 			   	/*=============================================
 				VALIDAR IMAGEN
@@ -176,6 +179,8 @@ class ControladorUsuarios{
 				$datos = array("nombre" => $_POST["nuevoNombre"],
 					           "usuario" => $_POST["nuevoUsuario"],
 					           "password" => $encriptar,
+							   "telefono"=>$_POST["nuevoTelefono"],
+							   "direccion"=>$_POST["nuevaDireccion"],
 					           "perfil" => $_POST["nuevoPerfil"],
 					           "foto"=>$ruta,
 							   "estado"=>$est);
@@ -381,6 +386,9 @@ class ControladorUsuarios{
 
 				}
 
+
+
+
 				if(!isset($_POST["nuevoPerfil"])){
 
 					$_POST["nuevoPerfil"] = "Cliente";
@@ -390,6 +398,8 @@ class ControladorUsuarios{
 				$datos = array("nombre" => $_POST["editarNombre"],
 							   "usuario" => $_POST["editarUsuario"],
 							   "password" => $encriptar,
+							   "telefono" => $_POST["editarTelefono"],
+							   "direccion" => $_POST["editarDireccion"],
 							   "perfil" => $_POST["nuevoPerfil"],
 							   "foto" => $ruta);
 

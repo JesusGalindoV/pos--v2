@@ -59,13 +59,13 @@
 		}
 
 		if($_SESSION["perfil"] == "Cliente"){
-			
-			echo '<li>
 
-				<a href="catalogo">
+			echo '<li class="active">
 
-					<i class="fa fa-product-hunt"></i>
-					<span>Catálogo</span>
+				<a href="inicio">
+
+					<i class="fa fa-home"></i>
+					<span>Inicio</span>
 
 				</a>
 
@@ -73,14 +73,14 @@
 
 		}
 
-		if($_SESSION["perfil"] == "Administrador" || $_SESSION["perfil"] == "Vendedor"){
-
+		if($_SESSION["perfil"] == "Cliente"){
+			
 			echo '<li>
 
-				<a href="clientes">
+				<a href="catalogo">
 
-					<i class="fa fa-users"></i>
-					<span>Clientes</span>
+					<i class="fa fa-product-hunt"></i>
+					<span>Catálogo</span>
 
 				</a>
 
