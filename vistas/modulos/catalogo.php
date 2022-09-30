@@ -110,16 +110,18 @@
 
                     <?php
 
-                      $item = null;
-                      $valor = null;
+                      // $item = null;
+                      // $valor = null;
 
-                      $categorias = ControladorUsuarios::ctrMostrarUsuarios($item, $valor);
+                      // $categorias = ControladorUsuarios::ctrMostrarUsuarios($item, $valor);
 
-                       foreach ($categorias as $key => $value) {
+                      //  foreach ($categorias as $key => $value) {
 
-                         echo '<option value="'.$value["id"].'">'.$value["nombre"].'</option>';
+                      //   echo '<option value="'.$value["id"].'">'.$value["nombre"].'</option>';
 
-                       }
+                      echo '<option value="'.$_SESSION["id"].'">'.$_SESSION["nombre"].'</option>';
+
+                      //  }
 
                     ?>
 
