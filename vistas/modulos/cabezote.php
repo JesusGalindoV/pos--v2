@@ -40,7 +40,11 @@
 		<div class="navbar-custom-menu">
 				
 			<ul class="nav navbar-nav">
-				
+			
+ 				<li class="user user-menu">
+					<a href="carrito"><i class="fa fa-cart">🛒</i></a>
+				</li>
+
 				<li class="dropdown user user-menu">
 					
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">

@@ -62,10 +62,10 @@
 
 			echo '<li class="active">
 
-				<a href="inicio">
+				<a href="catalogo">
 
-					<i class="fa fa-home"></i>
-					<span>Inicio</span>
+					<i class="fa fa-product-hunt"></i>
+					<span>catalogo</span>
 
 				</a>
 
@@ -77,10 +77,10 @@
 			
 			echo '<li>
 
-				<a href="catalogo">
+				<a href="perfil">
 
-					<i class="fa fa-product-hunt"></i>
-					<span>Catálogo</span>
+					<i class="fa fa-home"></i>
+					<span>Perfil</span>
 
 				</a>
 

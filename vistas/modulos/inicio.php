@@ -96,7 +96,7 @@
 
              </div>';
 
-             include "inicio/perfil.php";
+             include "inicio/catalogo.php";
 
           }
 

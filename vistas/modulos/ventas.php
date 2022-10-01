@@ -72,7 +72,7 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Cliente"){
            <th style="width:10px">#</th>
            <th>Código factura</th>
            <th>Cliente</th>
-           <th>Vendedor</th>
+           <th>Dirección</th>
            <th>Forma de pago</th>
            <th>Neto</th>
            <th>Total</th> 
@@ -116,12 +116,15 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Cliente"){
 
                   echo '<td>'.$respuestaCliente["nombre"].'</td>';
 
+
+                  
+
                   $itemUsuario = "id";
                   $valorUsuario = $value["id_vendedor"];
 
                   $respuestaUsuario = ControladorUsuarios::ctrMostrarUsuarios($itemUsuario, $valorUsuario);
 
-                  echo '<td>'.$respuestaUsuario["nombre"].'</td>
+                  echo '<td>'.$respuestaUsuario["direccion"].'</td>
 
                   <td>'.$value["metodo_pago"].'</td>
 
