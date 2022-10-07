@@ -229,7 +229,7 @@
                   
                       <select class="form-control" id="nuevoMetodoPago" name="nuevoMetodoPago" required>
                         <option value="">Seleccione método de pago</option>
-                        <option value="Efectivo">Efectivo</option>
+                        <option value="Efectivo">Efectivo OXXO</option>
                         <option value="TC">Tarjeta Crédito</option>
                         <option value="TD">Tarjeta Débito</option>                  
                       </select>    
